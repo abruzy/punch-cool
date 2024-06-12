@@ -345,7 +345,14 @@ const Home = () => {
             }`}
             onClick={handleButtonClick}
           >
-            <img src='/assets/arrow-down-white.svg' alt='arrow' />
+            <img
+              src={
+                formVisible === false
+                  ? '/assets/arrow-down-white.svg'
+                  : '/assets/white-forward-arrow.svg'
+              }
+              alt='arrow'
+            />
           </div>
         </div>
         <div className='flex flex-col md:flex-row mt-32 pb-32 px-4 md:px-16 gap-16'>
