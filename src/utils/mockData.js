@@ -181,3 +181,54 @@ export const sections = [
     arrowLast: { icon: '/assets/backward.svg', alt: 'backward' }
   }
 ]
+
+export const tabs = ['IT & Development', 'Design and Creative']
+
+export const jobData = [
+  {
+    category: 'IT & Development',
+    jobs: [
+      [
+        { title: 'Python Developer' },
+        { title: 'Shopify Developer' },
+        { title: 'MERN Stack Developer', highlight: true },
+        { title: 'Full Stack Developer' }
+      ],
+      [
+        { title: 'Data Scientist' },
+        { title: 'Front End Developer' },
+        { title: 'Shopify Developer' },
+        { title: 'Python Developer' }
+      ],
+      [
+        { title: 'Shopify Developer' },
+        { title: 'Python Developer' },
+        { title: 'Full Stack Developer' },
+        { title: 'Explore More', highlight: true }
+      ]
+    ]
+  },
+  {
+    category: 'Design and Creative',
+    jobs: [
+      [
+        { title: 'Graphic Designer' },
+        { title: 'UI/UX Designer' },
+        { title: 'Illustrator', highlight: true },
+        { title: 'Video Editor' }
+      ],
+      [
+        { title: 'Motion Graphics Designer' },
+        { title: '3D Animator' },
+        { title: 'UI/UX Designer' },
+        { title: 'Graphic Designer' }
+      ],
+      [
+        { title: 'UI/UX Designer' },
+        { title: 'Graphic Designer' },
+        { title: 'Video Editor' },
+        { title: 'Explore More', highlight: true }
+      ]
+    ]
+  }
+]

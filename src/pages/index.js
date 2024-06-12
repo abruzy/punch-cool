@@ -5,11 +5,21 @@ import StepCard from '../components/StepCard'
 import WhyChooseCard from '../components/WhyChooseCard'
 // import ExploreMore from '../components/ExploreMore'
 import CategorySection from '../components/CategorySection'
+import Tabs from '../components/Tabs'
+import JobList from '../components/JobList'
 
-import { journeySteps, sections, steps, whyChooseData } from '../utils/mockData'
+import {
+  jobData,
+  journeySteps,
+  sections,
+  steps,
+  tabs,
+  whyChooseData
+} from '../utils/mockData'
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false)
+  const [activeTab, setActiveTab] = useState(0)
   const [inputValue, setInputValue] = useState('Looking for design |')
 
   const handleMouseEnter = () => {
@@ -54,36 +64,8 @@ const Home = () => {
           </div>
         </form>
         <div className='mx-auto w-full md:w-3/4 bg-pearl rounded-2xl py-4 px-4 sm:px-8 mt-8'>
-          <div className='rounded-2xl flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-mint w-full md:w-fit mx-auto p-2'>
-            <p className='bg-foam rounded-2xl px-4 py-2 sm:px-8 sm:py-3 font-semibold cursor-pointer'>
-              IT & Development
-            </p>
-            <p className='rounded-2xl px-4 py-2 sm:px-8 sm:py-3 cursor-pointer'>
-              Design and Creative
-            </p>
-          </div>
-          <div className='grid grid-cols-1 text-center md:grid-cols-3 place-items-center mt-8 gap-4 md:gap-0  md:text-left'>
-            <div>
-              <p className='text-steel mb-4'>Python Developer</p>
-              <p className='text-steel mb-4'>Shopify Developer</p>
-              <p className='text-secondary mb-4 font-medium'>
-                MERN Stack Developer
-              </p>
-              <p className='text-steel mb-4'>Full Stack Developer</p>
-            </div>
-            <div>
-              <p className='text-steel mb-4'>Data Scientist</p>
-              <p className='text-steel mb-4'>Front End Developer</p>
-              <p className='text-steel mb-4'>Shopify Developer</p>
-              <p className='text-steel mb-4'>Python Developer</p>
-            </div>
-            <div>
-              <p className='text-steel mb-4'>Shopify Developer</p>
-              <p className='text-steel mb-4'>Python Developer</p>
-              <p className='text-steel mb-4'>Full Stack Developer</p>
-              <p className='text-secondary mb-4 font-medium'>Explore More</p>
-            </div>
-          </div>
+          <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+          <JobList jobs={jobData[activeTab].jobs} />
         </div>
       </section>
 
