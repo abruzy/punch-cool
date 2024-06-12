@@ -38,7 +38,8 @@ module.exports = {
         'white-2': '#F3F3F3',
         'dark-2': '#292B34',
         'orange-2': '#fff8e0',
-        'teal-blue': '#8BA4FD'
+        'teal-blue': '#8BA4FD',
+        'light-green': '#C7F4C2'
       },
       boxShadow: {
         deep: '0px 15px 25px 0px #00000026',

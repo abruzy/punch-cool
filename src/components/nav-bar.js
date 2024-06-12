@@ -7,22 +7,6 @@ const NavBar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
   return (
-    // <div className='bg-primary h-14 rounded-2xl mx-16 mt-9 flex items-center justify-between px-8 shadow-deep'>
-    //   <img src='/assets/logo.svg' alt='brand-logo' />
-    //   <div className='flex items-center gap-8'>
-    //     <p className='text-white text-xs font-medium'>Find Work</p>
-    //     <p className='text-white text-xs font-medium'>Find Talent</p>
-    //     <p className='text-white text-xs font-medium'>Articles</p>
-    //     <p className='text-white text-xs font-medium'>About Us</p>
-    //     <p className='text-white text-xs font-medium'>Contact Us</p>
-    //   </div>
-    //   <div className='flex items-center gap-8'>
-    //     <p className='text-white text-xs font-medium'>Log In</p>
-    //     <div className='rounded-2xl px-8 py-4 bg-white'>
-    //       <p className='text-secondary text-xs font-medium'>Join Now</p>
-    //     </div>
-    //   </div>
-    // </div>
     <div>
       <div className='bg-primary h-14 rounded-2xl mx-4 md:mx-16 mt-9 flex items-center justify-between px-4 md:px-8 shadow-deep'>
         <img src='/assets/logo.svg' alt='brand-logo' className='h-8' />
