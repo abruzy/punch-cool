@@ -72,4 +72,29 @@ section {
   border-image-slice: 1;
 }
 
+.slide-up {
+  animation: slideUp 0.5s forwards;
+}
+.push-down {
+  animation: pushDown 0.5s forwards;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes pushDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
 @tailwind utilities;

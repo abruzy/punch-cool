@@ -20,7 +20,13 @@ import {
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false)
   const [activeTab, setActiveTab] = useState(0)
+  const [formVisible, setFormVisible] = useState(false)
   const [inputValue, setInputValue] = useState('Looking for design |')
+  const [formValues, setFormValues] = useState({
+    name: 'Enter your name',
+    email: 'Enter your email',
+    message: 'Enter your message'
+  })
 
   const handleMouseEnter = () => {
     setIsHovered(true)
@@ -30,6 +36,9 @@ const Home = () => {
   }
   const handleChange = event => {
     setInputValue(event.target.value)
+  }
+  const handleButtonClick = () => {
+    setFormVisible(!formVisible)
   }
   return (
     <div>
@@ -294,7 +303,48 @@ const Home = () => {
           <h2 className='text-white text-3xl md:text-5xl font-semibold md:max-w-2xl text-center'>
             Need a job done, and done well? Get started
           </h2>
-          <div className='bg-secondary h-16 w-16 md:h-20 md:w-20 rounded-3xl flex items-center justify-center mt-8'>
+          <form
+            onClick={e => e.preventDefault()}
+            className={`grid grid-cols-1 md:grid-cols-2 gap-6 w-full md:w-2/4 mt-10 transition-all duration-500 ${
+              formVisible
+                ? 'opacity-100 translate-y-0 slide-up'
+                : 'opacity-0 -translate-y-10'
+            } ${formVisible ? 'block' : 'hidden'}`}
+          >
+            <input
+              type='text'
+              placeholder='Enter your name |'
+              value={formValues.name}
+              onChange={e =>
+                setFormValues({ ...formValues, name: e.target.value })
+              }
+              className='py-4 bg-transparent border-b border-b-seap text-white'
+            />
+            <input
+              type='email'
+              placeholder='Enter your email |'
+              value={formValues.email}
+              onChange={e =>
+                setFormValues({ ...formValues, email: e.target.value })
+              }
+              className='py-4 bg-transparent border-b border-b-seap text-white'
+            />
+            <input
+              type='text'
+              placeholder='Enter your message |'
+              value={formValues.message}
+              onChange={e =>
+                setFormValues({ ...formValues, message: e.target.value })
+              }
+              className='col-span-2 py-4 bg-transparent border-b border-b-seap text-white'
+            />
+          </form>
+          <div
+            className={`bg-secondary h-16 w-16 md:h-20 md:w-20 rounded-3xl flex items-center justify-center mt-8 cursor-pointer ${
+              formVisible ? 'push-down' : ''
+            }`}
+            onClick={handleButtonClick}
+          >
             <img src='/assets/arrow-down-white.svg' alt='arrow' />
           </div>
         </div>
