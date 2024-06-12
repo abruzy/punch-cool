@@ -97,4 +97,26 @@ section {
   }
 }
 
+@media (max-width: 640px) {
+  .min-w-full td,
+  .min-w-full th {
+    display: block;
+    width: 100%;
+  }
+
+  .min-w-full thead {
+    display: none;
+  }
+
+  .min-w-full tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .min-w-full tbody td {
+    display: block;
+    text-align: left;
+  }
+}
+
 @tailwind utilities;

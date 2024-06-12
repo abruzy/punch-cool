@@ -259,7 +259,7 @@ const Home = () => {
         <h2 className='text-secondary font-bold text-4xl md:text-5xl text-center mb-12 md:mb-24'>
           Frequently asked questions
         </h2>
-        <table class='min-w-full'>
+        <table class='min-w-full hidden md:table'>
           <thead>
             <tr>
               <th></th>
