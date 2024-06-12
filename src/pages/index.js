@@ -259,43 +259,79 @@ const Home = () => {
         <h2 className='text-secondary font-bold text-4xl md:text-5xl text-center mb-12 md:mb-24'>
           Frequently asked questions
         </h2>
-        <div className='border border-grey-3 flex flex-col md:flex-row'>
-          <p className='text-secondary font-semibold text-lg md:text-xl py-4 md:py-8 px-4 md:px-16 border-b md:border-r border-grey-3'>
-            General
-          </p>
-          <p className='py-4 md:py-8 mx-auto text-secondary text-lg md:text-xl opacity-80'>
-            I want to work part-time, is that possible
-          </p>
-        </div>
-        <p className='py-4 md:py-8 text-secondary text-lg md:text-xl opacity-80 text-center border-b border-grey-3'>
-          How long are the average projects?
-        </p>
-        <p className='py-4 md:py-8 text-secondary text-lg md:text-xl opacity-80 text-center border-b border-grey-3 bg-grey-4'>
-          How does the payment work?
-        </p>
-        <p className='py-4 md:py-8 text-secondary text-lg md:text-xl opacity-80 text-center border-b border-grey-3'>
-          How much can I earn?
-        </p>
-        <div className='border-b border-grey-3 flex flex-col md:flex-row'>
-          <p className='text-secondary font-semibold text-lg md:text-xl py-4 md:py-8 px-4 md:px-16 border-b md:border-r border-grey-3 bg-grey-4'>
-            General
-          </p>
-          <p className='text-secondary font-semibold text-lg md:text-xl py-4 md:py-8 px-4 md:px-16 border-b md:border-r border-grey-3'>
-            Joining Process
-          </p>
-          <p className='py-4 md:py-8 mx-auto text-secondary text-lg md:text-xl opacity-80'>
-            I want to work part-time, is that possible
-          </p>
-        </div>
-        <p className='py-4 md:py-8 text-secondary text-lg md:text-xl opacity-80 text-center border-b border-grey-3'>
-          How long are the average projects?
-        </p>
-        <p className='py-4 md:py-8 text-secondary text-lg md:text-xl opacity-80 text-center border-b border-grey-3'>
-          How long are the average projects?
-        </p>
-        <p className='py-4 md:py-8 text-secondary text-lg md:text-xl opacity-80 text-center border-b border-grey-3'>
-          How much can I earn?
-        </p>
+        <table class='min-w-full'>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-xl font-semibold text-secondary text-center py-8 md:border-r border-grey-3'>
+                General
+              </td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                I want to work part-time, is that possible
+              </td>
+            </tr>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How long are the average projects?
+              </td>
+            </tr>
+            <tr class='border border-gray-300 bg-grey-4'>
+              <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How does the payment works?
+              </td>
+            </tr>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How much can I earn?
+              </td>
+            </tr>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-xl font-semibold text-secondary text-center py-8 md:border-r border-grey-3 bg-grey-4'>
+                General
+              </td>
+              <td class='whitespace-nowrap text-xl font-semibold text-secondary py-8 text-center md:border-r border-grey-3'>
+                Joining Process
+              </td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                I want to work part-time, is that possible
+              </td>
+            </tr>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How long are the average projects?
+              </td>
+            </tr>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How long are the average projects?
+              </td>
+            </tr>
+            <tr class='border border-gray-300'>
+              <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How much can I earn?
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <footer className='bg-secondary clip-diagonal -mt-16 pt-24'>

@@ -45,6 +45,9 @@ module.exports = {
       boxShadow: {
         deep: '0px 15px 25px 0px #00000026',
         'deep-1': '0px 15px 30px 0px #BFB5FF26'
+      },
+      margin: {
+        'custom-margin': '42.5rem'
       }
     }
   },
