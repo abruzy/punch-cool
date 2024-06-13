@@ -255,7 +255,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='bg-white-2 pt-16 pb-32'>
+      {/* <section className='bg-white-2 pt-16 pb-32'>
         <h2 className='text-secondary font-bold text-4xl md:text-5xl text-center mb-12 md:mb-24'>
           Frequently asked questions
         </h2>
@@ -327,6 +327,125 @@ const Home = () => {
               <td class='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
               <td class='whitespace-nowrap text-sm text-gray-500 py-8'></td>
               <td class='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How much can I earn?
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section> */}
+      <section className='bg-white-2 pt-16 pb-32'>
+        <h2 className='text-secondary font-bold text-4xl md:text-5xl text-center mb-12 md:mb-24'>
+          Frequently asked questions
+        </h2>
+        <div className='block md:hidden'>
+          {/* Mobile View */}
+          <div className='px-4 py-4 border border-gray-300'>
+            <h3 className='text-xl font-semibold text-secondary'>General</h3>
+            <p className='text-sm text-gray-500'>
+              I want to work part-time, is that possible
+            </p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300'>
+            <p className='text-sm text-gray-500'>
+              How long are the average projects?
+            </p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300 bg-grey-4'>
+            <p className='text-sm text-gray-500'>How does the payment works?</p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300'>
+            <p className='text-sm text-gray-500'>How much can I earn?</p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300 bg-grey-4'>
+            <h3 className='text-xl font-semibold text-secondary'>
+              Joining Process
+            </h3>
+            <p className='text-sm text-gray-500'>
+              I want to work part-time, is that possible
+            </p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300'>
+            <p className='text-sm text-gray-500'>
+              How long are the average projects?
+            </p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300'>
+            <p className='text-sm text-gray-500'>
+              How long are the average projects?
+            </p>
+          </div>
+          <div className='px-4 py-4 border border-gray-300'>
+            <p className='text-sm text-gray-500'>How much can I earn?</p>
+          </div>
+        </div>
+        <table className='min-w-full hidden md:table'>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-xl font-semibold text-secondary text-center py-8 md:border-r border-grey-3'>
+                General
+              </td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                I want to work part-time, is that possible
+              </td>
+            </tr>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How long are the average projects?
+              </td>
+            </tr>
+            <tr className='border border-gray-300 bg-grey-4'>
+              <td className='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How does the payment works?
+              </td>
+            </tr>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How much can I earn?
+              </td>
+            </tr>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-xl font-semibold text-secondary text-center py-8 md:border-r border-grey-3 bg-grey-4'>
+                General
+              </td>
+              <td className='whitespace-nowrap text-xl font-semibold text-secondary py-8 text-center md:border-r border-grey-3'>
+                Joining Process
+              </td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                I want to work part-time, is that possible
+              </td>
+            </tr>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How long are the average projects?
+              </td>
+            </tr>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
+                How long are the average projects?
+              </td>
+            </tr>
+            <tr className='border border-gray-300'>
+              <td className='whitespace-nowrap text-sm font-medium text-gray-900 text-center py-8'></td>
+              <td className='whitespace-nowrap text-sm text-gray-500 py-8'></td>
+              <td className='whitespace-nowrap text-xl text-secondary opacity-80 py-8 px-28'>
                 How much can I earn?
               </td>
             </tr>
